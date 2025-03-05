@@ -15,16 +15,17 @@ body {
   /* Smooth scrolling across the page */
 }
 
-.main{
+.main {
   position: fixed;
   z-index: 1;
   width: 100%;
 }
- .content {
+
+.content {
   position: relative;
   z-index: 2;
   margin-top: 100vh;
-} 
+}
 
 img {
   display: block;
