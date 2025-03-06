@@ -27,7 +27,7 @@ body {
   margin-top: 100vh;
 }
 
-img {
+.main img {
   display: block;
   overflow: hidden;
   object-fit: cover;
@@ -130,11 +130,6 @@ section p {
 
 
 /* Navbar */
-
-/* html,body{
-   width: 100%;
-   height: 100%;
- } */
 #overlay {
   width: 100%;
   height: 100%;
