@@ -275,7 +275,8 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  text-align: center;
+  text-align: left;
+  gap: 5%;
 }
 
 .footer .tagline {
