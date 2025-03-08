@@ -47,7 +47,6 @@ section h2 {
   font-size: 36px;
   font-weight: bold;
   color: #38a169;
-  /* Tailwind green-600 */
   margin-bottom: 20px;
 }
 
@@ -55,6 +54,46 @@ section p {
   font-size: 18px;
 }
 
+/*About us*/
+
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  max-width: 1426px;
+  margin: auto;
+  padding: 50px 20px;
+  text-align: left;
+}
+
+#about img {
+  width: 40%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+}
+
+#about .about-text {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  #about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #about img {
+    width: 80%;
+  }
+
+  #about .about-text {
+    width: 100%;
+  }
+}
+
+/*end of about us*/
 
 
 .hero {
@@ -88,6 +127,23 @@ section p {
   cursor: pointer;
   text-decoration: none;
   transition: background-color 0.3s, transform 0.2s;
+}
+
+.wel{
+  color: black;
+  text-align: left;
+}
+
+.wel h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+  text-decoration: underline;
+  text-decoration-thickness: 0.05em; /* Scales with font size */
+  text-underline-offset: 0.2em; /* Adjusts gap responsively */
+}
+
+.butn{
+ margin-top: 22%;
 }
 
 /*content*/
@@ -124,6 +180,41 @@ section p {
 #products {
   background-color: #9b9a9a;
   color: #333;
+}
+
+.product-heading h2 {
+  color: black;
+  position: absolute;
+  margin-top: 0%;
+  margin-left: 110px;
+
+}
+
+
+button {
+  background-color: #9b9a9a;
+  color: #333;
+  padding: 4px 20px;
+  text-align: center;
+  border-radius: 8px;
+  margin-left: 70%;
+  margin-bottom: 2%;
+  cursor: pointer;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: #2a9833;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #1eb42b;
 }
 
 
@@ -264,7 +355,7 @@ a {
 .footer {
   background-color: #38a169;
   color: #fff;
-  padding: 45px 25px;
+  padding: 30px 25px;
   text-align: center;
 }
 
