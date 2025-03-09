@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 section {
@@ -9,6 +10,156 @@ section {
     text-align: center;
     background-color: white;
 }
+
+#overlay {
+    width: 100%;
+    height: 100%;
+    color: rgb(18, 15, 15);
+  }
+  
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh; /* Adjust as needed */
+    padding: 0 50px; /* Reduce padding if needed */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    background-color: transparent;
+    /* color: rgb(255, 0, 0); */
+    transition: background 0.5s ease-in-out, transform 0.5s ease-in-out;
+    z-index: 999;
+  }
+  
+  /* Change background to black when scrolling */
+  .scrolled {
+    background: black !important;
+    opacity: 0.9;
+    color: white !important;
+  }
+  
+  .scrolled a {
+    color: white !important;
+  }
+  
+  .scrolled .link {
+    color: white !important;
+  }
+  
+  
+  /* Hide Navbar */
+  .hidden {
+    transform: translateY(-100%);
+  }
+  
+  .logo img {
+    height: 40px;
+    /* Adjust as needed */
+  }
+  
+  
+  #links {
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    color: rgb(255,255,255);
+  }
+  
+  .link {
+    cursor: pointer;
+    text-decoration: none !important; /* Ensure no underline */
+}
+
+  
+  .link:hover {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    transition: 0.3s ease-in;
+  }
+  .link:hover, a:hover {
+    color: white;
+    text-decoration: none !important;
+    letter-spacing: 3px;
+    transition: 0.3s ease-in;
+}
+
+  a {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-decoration: none !important; /* Ensure no underline */
+    transition: 0.3s ease-in;
+}
+
+  a:hover{
+    color: white;
+  }
+  
+  @media (max-width:768px) {
+    #links {
+      display: none;
+    }
+  
+    #hemberger {
+      display: inline-block;
+      color: white;
+      cursor: pointer;
+      font-size: 35px;
+  
+    }
+  
+    #navpage {
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      color: white;
+      position: absolute;
+      z-index: 99;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: translateY(-100%);
+      transition: 0.3s ease-in-out;
+    }
+  
+    #mobilelinks {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+    }
+  
+    #mobilelinks a {
+      display: inline-block;
+      margin: 30px 0;
+    }
+  
+    #close {
+      font-size: 35px;
+      color: white;
+      position: absolute;
+      right: 10%;
+      top: 6%;
+      cursor: pointer;
+    }
+  
+  }
+  
+  @media (min-width:768px) {
+    #hemberger {
+      color: white;
+      display: none;
+    }
+  
+    #navpage {
+      display: none;
+    }
+  
+  }
 
 .stats{
     padding: 120px 0;
