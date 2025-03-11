@@ -242,6 +242,26 @@ section p {
 
 }
 
+/* Scroll Animation - Initially Hidden */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* When in View - Show Animation */
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Reset Animation when Scrolling Up */
+.fade-up.hide {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
 
 button {
   background-color: #9b9a9a;
@@ -475,9 +495,9 @@ a:hover{
   font-size: 1.2rem;
 }
 
-.footer .social a:hover {
+/* .footer .social a:hover {
   color: #f8b400;
-}
+} */
 
 .footer .rights {
   margin-top: 20px;

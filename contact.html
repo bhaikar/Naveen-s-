@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
     <link rel="stylesheet" href="contact.css">
     <title>ContactUs</title>
     <link rel="shortcut icon" href="/images/Icon.png">
@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    
+
     <!-- Navbar -->
     <div id="navpage">
         <div id="close"><i class="ri-close-line"></i></div>
@@ -27,7 +27,7 @@
     <div id="overlay">
         <nav id="navbar">
             <div class="logo">
-                <img src="/images/naveensLogo.png" alt="Naveen's Logo">
+                <img src="images/naveensLogo.png" alt="Naveen's Logo" id="naveenLogo">
             </div>
             <span id="hemberger"><i class="ri-menu-2-line"></i></span>
             <div id="links">
@@ -38,10 +38,11 @@
 
             </div>
         </nav>
+        
+        <!-- Navbar End -->
 
         <section class="stats">
-            <img src="https://th.bing.com/th/id/OIP.jV6CnHnZwElwStOni_4GywHaHa?w=1080&h=1080&rs=1&pid=ImgDetMain" alt=""
-                data-aos="fade-in" class="aos-init aos-animate">
+            <img src="/images/p2.jpg" alt="" data-aos="fade-in" class="aos-init aos-animate">
             <div class="container position-relative aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
                 <div class="row-col gy-4">
                     <div class="text-center w-100 h-100" style="color : rgb(255, 0, 0)">
@@ -76,7 +77,7 @@
 
                         <div class="input-group">
                             <label for="message">Your Feedback</label>
-                            <textarea id="message" name="message" rows="4"  placeholder="Feedback"></textarea>
+                            <textarea id="message" name="message" rows="4" placeholder="Feedback"></textarea>
                         </div>
 
                         <button type="submit" class="submit-btn">Submit</button>
@@ -100,7 +101,7 @@
 
             <div class="row">
                 <h2>Contact US</h2>
-                <p>Contact us for any inquires</p>
+                <p class="fade-up">Contact us for any inquires</p>
                 <div class="col-sm-3 address">
                     <h3>Address</h3>
                     <p>Dehradun, India</p>
@@ -122,11 +123,14 @@
 
         </section>
 
+        <!-- Footer -->
         <footer class="footer">
             <div class="container">
                 <div class=" col-sm-3 tagline">
-                    <h2>naveens</h2>
-                    <p>"Loginware an industry-leading technology company at the forefront of delivering sophisticated
+                    <h2>Naveen's</h2>
+                    
+                    <p>"Loginware an industry-leading technology company at the forefront of delivering
+                        sophisticated
                         and digitally transformative solutions for the manufacturing sector."</p>
                 </div>
                 <div class="col-sm-3 contact">
@@ -138,18 +142,18 @@
 
                 <div class="col-sm-3 social">
                     <h3>Pages</h3>
-                    <P> <a class="link" href="/">HOME</a> </P>
-                    <P><a class="link" href="/career.html">CAREER</a> </P>
-                    <P><a class="link" href="/product.html">PRODUCT</a> </P>
-                    <P> <a class="link" href="/contact.html">CONTACTUS</a> </P>
+                    <P> <a class="link" href="/">Home</a></P>
+                    <P> <a class="link" href="/career.html">Career</a></P>
+                    <P> <a class="link" href="/product.html">Product</a></P>
+                    <P><a class="link" href="/contact.html">Contact Us</a></P>
                 </div>
 
                 <div class="col-sm-3 social">
                     <h3>Follow Us</h3>
-                    <p> <a href="#">Facebook</a></p>
-                    <p> <a href="#">Twitter</a></p>
-                    <p> <a href="#">LinkedIn</a></p>
-                    <p> <a href="#">Instagram</a></p>
+                    <p> <a class="link"href="#">Facebook</a></p>
+                        <p> <a class="link"href="#">Twitter</a></p>
+                        <p> <a class="link"href="#">LinkedIn</a></p>
+                        <p> <a class="link"href="#">Instagram</a></p>
                 </div>
             </div>
             <hr style="border: 1px solid black; width: 100%; margin: 0 auto;">
@@ -158,9 +162,10 @@
 
             </div>
         </footer>
+    </div>
 
-        <script src="index.js"></script>
-        <script src="contact.js"></script>
+    <script src="index.js"></script>
+    <script src="contact.js"></script>
 </body>
 
 </html>
