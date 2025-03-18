@@ -2,9 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:"Montserrat";
-  --GREEN:#1db843;
-
+  font-family: "Montserrat";
+  --GREEN: #1db843;
+  transition: all 0.3s ease-out;
 }
 
 body {
@@ -13,6 +13,7 @@ body {
   scroll-behavior: smooth;
   display: flex;
   overflow-x: hidden;
+  width: 100%;
   /* Smooth scrolling across the page */
 }
 
@@ -26,27 +27,26 @@ body {
   position: relative;
   z-index: 2;
   margin-top: 100vh;
-  
 }
-
+.f1{
+  color: white !important;
+  z-index: 999;
+}
 .main img {
   display: block;
   overflow: hidden;
   object-fit: cover;
   width: 100%;
- height: 380px;
+  height: 380px;
   position: relative;
 }
 
 /* Section Styles */
-section{
+section {
   padding: 80px 20px;
   text-align: center;
   background-color: white;
-
 }
-
-
 
 section h2 {
   font-size: 36px;
@@ -60,17 +60,15 @@ section p {
 }
 
 /*About us*/
-
 #about {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 80px;
-  width:100%;
+  width: 100%;
   margin: auto;
   padding: 50px 20px;
   text-align: left;
- 
 }
 
 #about img {
@@ -83,24 +81,6 @@ section p {
 #about .about-text {
   width: 50%;
 }
-
-@media (max-width: 768px) {
-  #about {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  #about img {
-    width: 80%;
-  }
-
-  #about .about-text {
-    width: 100%;
-  }
-}
-
-/*end of about us*/
-
 
 .hero {
   background-color: #38a169;
@@ -124,7 +104,7 @@ section p {
 
 .hero p {
   font-size: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .hero .btn {
@@ -138,42 +118,40 @@ section p {
   transition: background-color 0.3s, transform 0.2s;
 }
 
-.wel{
+.wel {
   color: black;
   text-align: left;
   margin-left: 0%;
-  
 }
 
 .wel h1 {
   font-size: 60px;
-  color:white;
+  color: white;
   margin-top: 10px;
   /* margin-bottom: 20px; */
   text-decoration: none;
-  text-decoration-thickness: 0.05em; /* Scales with font size */
-  text-underline-offset: 0.2em; /* Adjusts gap responsively */
+  text-decoration-thickness: 0.05em;
+  /* Scales with font size */
+  text-underline-offset: 0.2em;
+  /* Adjusts gap responsively */
 }
 
-.wel p{
+.wel p {
   color: white;
 }
 
-.careerButton{
+.careerButton {
   width: 180px;
   height: 70px;
-  background-color:white ;
+  background-color: white;
   color: #38a169;
   border: none;
   margin-left: 50%;
   margin-top: 5px;
   margin-bottom: 15px;
-  
-
 }
 
 /*content*/
-
 .card {
   background-color: white;
   padding: 30px;
@@ -184,6 +162,7 @@ section p {
 
 .card:hover {
   transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 .card h3 {
@@ -203,24 +182,6 @@ section p {
   padding: 4px 25px;
 }
 
-/* When screen width is below 768px */
-@media (max-width: 768px) {
-  .grid {
-    grid-template-columns: 1fr; /* Stack elements one below another */
-    margin-left: 2%;
-    margin-right: 2%;
-  }
-}
-
-/* When screen width is below 480px */
-@media (max-width: 480px) {
-  .grid {
-    grid-template-columns: 1fr; /* Still one per row, but more compact */
-    gap: 10px; /* Reduce space between items */
-    padding: 2px 10px;
-  }
-}
-
 #products {
   background-color: #38a169;
   color: #333;
@@ -228,40 +189,17 @@ section p {
   text-align: center;
   display: flex;
   flex-wrap: wrap;
- justify-content: center;
- 
+  justify-content: center;
 }
 
-.product-heading{
- color: white;
- font-weight: normal;
- font-size: 3rem;
- font-family:"Montserrat";
- margin-bottom: 1rem;
- margin-top: 1rem;
-
+.product-heading {
+  color: white;
+  font-weight: normal;
+  font-size: 3rem;
+  font-family: "Montserrat";
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
-
-/* Scroll Animation - Initially Hidden */
-.fade-up {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-
-/* When in View - Show Animation */
-.fade-up.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Reset Animation when Scrolling Up */
-.fade-up.hide {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-}
-
 
 button {
   background-color: #9b9a9a;
@@ -286,22 +224,19 @@ button {
   border-radius: 25px;
   transition: background 0.3s ease;
 }
-.cta-button:hover{
+
+.cta-button:hover {
   background-color: rgb(231, 229, 229);
   color: black;
+  transform: scale(1.05);
 }
-
-
-
-
 
 /* Navbar */
 #overlay {
   width: 100%;
   height: 50vh;
-  background-color:  #38a169;
+  background-color: #38a169;
   color: rgb(18, 15, 15);
-  
 }
 
 nav {
@@ -309,8 +244,10 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  height: 10vh; /* Adjust as needed */
-  padding: 0 50px; /* Reduce padding if needed */
+  height: 10vh;
+  /* Adjust as needed */
+  padding: 0 50px;
+  /* Reduce padding if needed */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -336,7 +273,6 @@ nav {
   color: white !important;
 }
 
-
 /* Hide Navbar */
 .hidden {
   transform: translateY(-100%);
@@ -347,12 +283,11 @@ nav {
   /* Adjust as needed */
 }
 
-
 #links {
   width: 500px;
   display: flex;
   justify-content: space-around;
-  color: rgb(255,255,255);
+  color: rgb(255, 255, 255);
 }
 
 .link {
@@ -369,81 +304,69 @@ nav {
 }
 
 a {
-  color: rgb(0,0,0);
+  color: rgb(0, 0, 0);
   font-weight: normal;
   text-decoration: none;
   transition: 0.3s ease-in;
-
 }
-a:hover{
+
+a:hover {
+  color: rgb(0, 0, 0) !important;
+}
+
+/* Mobile navbar styles */
+#navpage {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-100%);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#mobilelinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+#mobilelinks .link {
+  font-size: 24px;
+  margin: 15px 0;
   color: white;
+  text-align: center;
+  padding: 10px;
+  width: 80%;
 }
 
-@media (max-width:768px) {
-  #links {
-    display: none;
-  }
-
-  #hemberger {
-    display: inline-block;
-    color: white;
-    cursor: pointer;
-    font-size: 35px;
-
-  }
-
-  #navpage {
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    color: white;
-    position: absolute;
-    z-index: 99;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: translateY(-100%);
-    transition: 0.3s ease-in-out;
-  }
-
-  #mobilelinks {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-  }
-
-  #mobilelinks a {
-    display: inline-block;
-    margin: 30px 0;
-  }
-
-  #close {
-    font-size: 35px;
-    color: white;
-    position: absolute;
-    right: 10%;
-    top: 6%;
-    cursor: pointer;
-  }
-
+#mobilelinks .link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
 }
 
-@media (min-width:768px) {
-  #hemberger {
-    color: white;
-    display: none;
-  }
+#close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  z-index: 10000;
+}
 
-  #navpage {
-    display: none;
-  }
-
+#hemberger {
+  cursor: pointer;
+  font-size: 30px;
 }
 
 /* footer */
-
 .footer {
   background-color: #38a169;
   color: #fff;
@@ -466,7 +389,6 @@ a:hover{
   font-size: 1.2rem;
   font-weight: nor;
   margin-bottom: 10px;
-
 }
 
 .footer .contact,
@@ -488,41 +410,232 @@ a:hover{
 }
 
 .footer .social a {
-  display: inline-block;
-  margin-right: 10px;
+  display: block;
+  margin-bottom: 5px;
   text-decoration: none;
   color: #fff;
   font-size: 1.2rem;
 }
 
-/* .footer .social a:hover {
+.footer .social a:hover {
   color: #f8b400;
-} */
+}
 
 .footer .rights {
   margin-top: 20px;
   font-size: 0.9rem;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .footer .container {
-    text-align: center;
-    flex-direction: column;
-  }
+.f1{
+  color: white;
 }
 
 .hidden {
   opacity: 0;
 }
 
-
-#naveenLogo{
+#naveenLogo {
   width: 130px;
   height: 180px;
   margin-top: 19px;
 }
 
-.wel-h1, .wel-para{
-  font-family:"Montserrat";
+.wel-h1,
+.wel-para {
+  font-family: "Montserrat";
+}
+
+/* Animation for revealing elements */
+.card,
+#about img,
+.about-text {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.card.revealed,
+#about img.revealed,
+.about-text.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .hero h1 {
+    font-size: 48px;
+  }
+
+  .wel-h1 {
+    font-size: 40px !important;
+  }
+
+  .product-heading {
+    font-size: 2.5rem;
+  }
+
+  #about {
+    gap: 40px;
+    padding: 40px 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  #links {
+    display: none !important;
+  }
+
+  #hemberger {
+    display: block !important;
+    color: white;
+  }
+
+  #about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #about img {
+    width: 80%;
+  }
+
+  #about .about-text {
+    width: 100%;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .hero {
+    height: auto;
+    min-height: 60vh;
+    padding-bottom: 20px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .wel-h1 {
+    font-size: 32px !important;
+  }
+
+  .wel-para {
+    font-size: 16px;
+  }
+
+  .wel {
+    width: 90%;
+    margin: 75px auto;
+    text-align: center;
+  }
+
+  .product-heading {
+    font-size: 2rem;
+  }
+
+  .careerButton {
+    margin: 20px auto;
+    display: block;
+  }
+
+  section {
+    padding: 50px 15px;
+  }
+
+  .main img {
+    height: 300px;
+  }
+
+  nav {
+    height: 60px;
+    padding: 0 15px;
+  }
+
+  #naveenLogo {
+    width: 90px;
+    height: 120px;
+    margin-top: 10px;
+  }
+
+  .footer .container {
+    text-align: center;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 2px 10px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .wel-h1 {
+    font-size: 24px !important;
+    margin-top: 5px;
+  }
+
+  .product-heading {
+    font-size: 1.5rem;
+  }
+
+  section h2 {
+    font-size: 28px;
+  }
+
+  .main img {
+    height: 250px;
+  }
+
+  #naveenLogo {
+    width: 80px;
+    height: 100px;
+  }
+
+  .card {
+    padding: 20px 15px;
+  }
+}
+
+@media (min-width: 769px) {
+  #hemberger {
+    display: none;
+  }
+
+  #navpage {
+    display: none;
+  }
+}
+
+/* Scroll Animation - Initially Hidden (for out products heading) */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* When in View - Show Animation */
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Reset Animation when Scrolling Up */
+.fade-up.hide {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }

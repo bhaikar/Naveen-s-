@@ -5,14 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naveen's</title>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <script src="supabase.js"></script> <!-- Link to our custom script -->
+
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="/images/Icon.png">
+    <link rel="shortcut icon" href="images/Icon.png">
 </head>
 
 <body>
@@ -22,44 +26,45 @@
         <div id="close"><i class="ri-close-line"></i></div>
         <div id="mobilelinks">
             <a class="link" href="/">Home</a>
-            <a class="link" href="/career.html">Career</a>
-            <a class="link" href="/product.html">Product</a>
-            <a class="link" href="/contact.html">Contact Us</a>
+            <a class="link" href="career.html">Career</a>
+            <a class="link" href="product.html">Product</a>
+            <a class="link" href="contact.html">Contact Us</a>
         </div>
     </div>
 
     <div id="overlay">
         <nav id="navbar">
             <div class="logo">
-                <img src="images/naveensLogo.png" alt="Naveen's Logo" id="naveenLogo">
+                <a href="index.html"><img src="images/naveensLogo.png" alt="Naveen's Logo" id="naveenLogo"></a>
             </div>
             <span id="hemberger"><i class="ri-menu-2-line"></i></span>
             <div id="links">
                 <a class="link" href="/">Home</a>
                 <a class="link" href="career.html">Career</a>
-                <a class="link" href="/product.html">Product</a>
-                <a class="link" href="/contact.html">Contact Us</a>
+                <a class="link" href="product.html">Product</a>
+                <a class="link" href="contact.html">Contact Us</a>
 
             </div>
         </nav>
 
         <!-- Main Content -->
         <div class="main">
-            <a href="/index.html">
-                <img fetchpriority="high"
-                    src="images/p1.jpg"
-                    alt="" style="object-fit: cover; object-position: 50% 50%; " data-ssr-src-done="true">
+            <a href="index.html">
+                <img fetchpriority="high" src="images/p1.jpg" alt=""
+                    style="object-fit: cover; object-position: 50% 50%; " >
             </a>
             <section id="home" class="hero">
                 <div class="wel">
-                    <div>
-                    <h1 class="wel-h1">Welcome to Naveen's</h1>
-<p class="wel-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui repudiandae autem perspiciatis ea beatae nemo ipsam quaerat nisi blanditiis tempora nihil tempore expedita magni atque, veniam, illo quia! Quas exercitationem accusamus, hic ipsa, dolores sequi qui consequatur eveniet voluptates ipsam quia dolore nihil, mollitia quod dolorum aspernatur quaerat omnis repudiandae?</p>
+                    
+                        <h1 class="wel-h1">Naveen's</h1>
+                        <p class="wel-para">"Smart Solutions, Affordable Prices! At Naveen Softech, we offer
+                            cost-effective, cutting-edge software to streamline operations and enhance
+                            productivity—without the high costs."</p>
+                    
                 </div>
-                </div>
-                
-                    <button class="careerButton" ><a href="/career.html" >Career</a></button>
-        
+
+                <a href="career.html"><button class="careerButton" style="margin-top: 1px;">Career</button></a>
+
                 </h1>
             </section>
         </div>
@@ -71,16 +76,18 @@
                     <h2 class="fade-up">About Us</h2>
                     <p>"Business Made Easy, Prices Made Lighter!"
                         At Naveen Softech, we believe that powerful business solutions shouldn’t come with a hefty price
-                        tag. Our affordable, cutting-edge software is designed to streamline operations, boost productivity,
+                        tag. Our affordable, cutting-edge software is designed to streamline operations, boost
+                        productivity,
                         and help businesses run smoothly—without breaking the bank. Whether you're a startup or an
-                        established enterprise, we provide smart, budget-friendly technology that simplifies your workflow
+                        established enterprise, we provide smart, budget-friendly technology that simplifies your
+                        workflow
                         and maximizes efficiency. With Naveen Softech, success is within reach—efficient, seamless, and
                         cost-effective!
                     </p>
                 </div>
                 <img src="https://aigeeked.com/wp-content/uploads/2022/12/ai-text-generator.jpg" alt="About Us Image">
             </section>
-            
+
 
             <!-- Products Section -->
             <section id="products">
@@ -93,7 +100,7 @@
                         <p>Say goodbye to spreadsheets and manual calculations. Our accounting software helps you
                             streamline
                             bookkeeping, manage cash flow, and keep track of every transaction with ease.</p>
-                        
+
                     </div>
                     <div class="card">
                         <h3>Advanced Accounting</h3>
@@ -110,7 +117,7 @@
                             OneDrive storage, real-time replication, and military-grade encryption. Secure, scalable,
                             and
                             stress-free.</p>
-                       
+
                     </div>
                 </div>
                 <a href="product.html" class="cta-button">Learn More</a>
@@ -122,8 +129,8 @@
                 <div class="container">
                     <div class=" col-sm-3 tagline">
                         <h2>Naveen's</h2>
-                        
-                        <p>"Loginware an industry-leading technology company at the forefront of delivering
+
+                        <p>"Industry-leading technology company at the forefront of delivering
                             sophisticated
                             and digitally transformative solutions for the manufacturing sector."</p>
                     </div>
@@ -137,60 +144,33 @@
                     <div class="col-sm-3 social">
                         <h3>Pages</h3>
                         <P> <a class="link" href="/">Home</a></P>
-                        <P> <a class="link" href="/career.html">Career</a></P>
-                        <P> <a class="link" href="/product.html">Product</a></P>
-                        <P><a class="link" href="/contact.html">Contact Us</a></P>
+                        <P> <a class="link" href="career.html">Career</a></P>
+                        <P> <a class="link" href="product.html">Product</a></P>
+                        <P><a class="link" href="contact.html">Contact Us</a></P>
                     </div>
 
                     <div class="col-sm-3 social">
                         <h3>Follow Us</h3>
-                        <p> <a class="link"href="#">Facebook</a></p>
-                        <p> <a class="link"href="#">Twitter</a></p>
-                        <p> <a class="link"href="#">LinkedIn</a></p>
-                        <p> <a class="link"href="#">Instagram</a></p>
+                        <p> <a class="link" href="#">Facebook</a></p>
+                        <p> <a class="link" href="#">Twitter</a></p>
+                        <p> <a class="link" href="#">LinkedIn</a></p>
+                        <p> <a class="link" href="#">Instagram</a></p>
                     </div>
                 </div>
                 <hr style="border: 1px solid black; width: 100%; margin: 0 auto;">
                 <div class="rights">
-                    <p class="col-sm-12 text-center">© 2021 Naveen's. All Rights Reserved.</p>
+                    <p class="col-sm-12 text-center">© 2019 Naveen's. All Rights Reserved.</p>
 
                 </div>
             </footer>
         </div>
     </div>
-        <script src="index.js"></script>
-        <script>
-            function typeWriterEffect(element, text, speed) {
-                let i = 0;
-                function type() {
-                    if (i < text.length) {
-                        element.innerHTML += text.charAt(i);
-                        i++;
-                        setTimeout(type, speed);
-                    }
-                }
-                element.innerHTML = ""; // Clear any previous content
-                type();
-            }
-        
-            // Run Typewriter Effect on Page Load
-            document.addEventListener("DOMContentLoaded", function () {
-                const heading = document.querySelector(".wel-h1");
-                const para = document.querySelector(".wel-para");
-        
-                if (heading) {
-                    typeWriterEffect(heading, "Naveen's", 100); // Faster speed
-                }
-        
-                setTimeout(() => {
-                    if (para) {
-                        typeWriterEffect(para, "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui repudiandae autem perspiciatis ea beatae nemo ipsam quaerat nisi blanditiis tempora nihil tempore expedita magni atque, veniam, illo quia! Quas exercitationem accusamus, hic ipsa, dolores sequi qui consequatur eveniet voluptates ipsam quia dolore nihil, mollitia quod dolorum aspernatur quaerat omnis repudiandae?", 25);
-                    }
-                }, 500); // Reduced delay for faster effect
-            });
-        </script>
-        
-        
+    <script src="index.js"></script>
+    <script type="module" src="supabase.js"></script>
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+
+    
+    
 </body>
 
 </html>

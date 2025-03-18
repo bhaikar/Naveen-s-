@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -46,7 +46,7 @@ header p {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-    margin: 180px 1px;
+    margin: 40px 1px;
     margin-bottom: 0px;
 }
 
@@ -137,9 +137,16 @@ nav {
   /* color: rgb(255, 0, 0); */
   transition: background 0.5s ease-in-out, transform 0.5s ease-in-out;
   z-index: 999;
+  
 }
 
 /* Change background to black when scrolling */
+
+a{
+  color: white !important;
+  text-decoration: none !important;
+}
+
 .scrolled {
   background: black !important;
   opacity: 0.9;
@@ -389,4 +396,155 @@ h1{
 
 .wel-h1, .wel-para{
   font-family:"Montserrat";
+}
+
+@media (max-width: 768px) {
+  #links {
+    display: none !important;
+  }
+
+  #hemberger {
+    display: block !important;
+    color: white;
+  }
+
+  #about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #about img {
+    width: 80%;
+  }
+
+  #about .about-text {
+    width: 100%;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .hero {
+    height: auto;
+    min-height: 60vh;
+    padding-bottom: 20px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .wel-h1 {
+    font-size: 32px !important;
+  }
+
+  .wel-para {
+    font-size: 16px;
+  }
+
+  .wel {
+    width: 90%;
+    margin: 75px auto;
+    text-align: center;
+  }
+
+  .product-heading {
+    font-size: 2rem;
+  }
+
+  .careerButton {
+    margin: 20px auto;
+    display: block;
+  }
+
+  section {
+    padding: 50px 15px;
+  }
+
+  .main img {
+    height: 300px;
+  }
+
+  nav {
+    height: 60px;
+    padding: 0 15px;
+  }
+
+  #naveenLogo {
+    width: 90px;
+    height: 120px;
+    margin-top: 10px;
+  }
+
+  .footer .container {
+    text-align: center;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 2px 10px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .wel-h1 {
+    font-size: 24px !important;
+    margin-top: 5px;
+  }
+
+  .product-heading {
+    font-size: 1.5rem;
+  }
+
+  section h2 {
+    font-size: 28px;
+  }
+
+  .main img {
+    height: 250px;
+  }
+
+  #naveenLogo {
+    width: 80px;
+    height: 100px;
+  }
+
+  .card {
+    padding: 20px 15px;
+  }
+}
+
+@media (min-width: 769px) {
+  #hemberger {
+    display: none;
+  }
+
+  #navpage {
+    display: none;
+  }
+  #navpage.open ~ #hemberger {
+    display: none;
+  }
+}
+
+#navpage.open ~ #hemberger {
+  display: none;
+}
+.logo img {
+  height: 100px;
+   /* Adjust width as needed */
+  object-fit: contain;
 }
