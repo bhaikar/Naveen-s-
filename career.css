@@ -24,6 +24,12 @@ body {
   color: rgb(18, 15, 15);
 }
 
+#naveenLogo {
+  width: 130px;
+  height: 180px;
+  margin-top: 19px;
+}
+
 nav {
   position: fixed;
   top: 0;
@@ -43,6 +49,8 @@ nav {
 /* Change background to black when scrolled */
 .scrolled {
   background: black !important;
+  opacity: 0.9;
+  color: white !important;
 }
 
 /* Hide Navbar */

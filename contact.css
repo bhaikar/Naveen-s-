@@ -22,7 +22,7 @@ body {
   max-width: 100%;
 }
 
-#f1{
+#f1 {
   color: white !important;
 }
 
@@ -56,6 +56,7 @@ nav {
 /* Change background to black when scrolled */
 .scrolled {
   background: black !important;
+  opacity: 0.9;
   color: white !important;
 }
 
@@ -149,10 +150,27 @@ nav {
   top: 6%;
   cursor: pointer;
 }
-.contactinfo
-{
-  width: 100;
+
+.contactinfo {
+  width: 100%;
+   min-height: 40vh; /*Ensures a minimum height for better spacing */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box; /* Prevents overflow issues */
 }
+
+@media (max-width: 768px) {
+  .contactinfo {
+   
+    min-height: auto; /* Adjusts dynamically */
+    padding: 10px;
+  }
+}
+
 /* Mobile navigation fixes */
 #hemberger {
   display: none;
@@ -164,18 +182,20 @@ nav {
 
 @media (max-width: 768px) {
   #hemberger {
-    display: block !important; /* Force display of hamburger menu icon */
+    display: block !important;
+    /* Force display of hamburger menu icon */
   }
-  
+
   /* Make sure the hamburger icon is visible regardless of other styles */
   nav #hemberger {
     display: block !important;
     position: relative;
     z-index: 1001;
   }
-  
+
   #links {
-    display: none !important; /* Hide desktop links on mobile */
+    display: none !important;
+    /* Hide desktop links on mobile */
   }
 
   /* Ensure navpage opens properly */
@@ -183,7 +203,7 @@ nav {
     transform: translateY(0) !important;
     display: flex !important;
   }
-  
+
   #mobilelinks {
     width: 100%;
     height: 70%;
@@ -345,7 +365,7 @@ nav {
   color: #ffffff;
 }
 
-.row > div {
+.row>div {
   flex: 1;
   min-width: 200px;
   margin: 10px;
@@ -365,7 +385,7 @@ nav {
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
- 
+
 }
 
 .fade-up.show {
@@ -470,8 +490,10 @@ nav {
   .footer .container {
     flex-wrap: wrap;
   }
-  
-  .footer .tagline, .footer .contact, .footer .social {
+
+  .footer .tagline,
+  .footer .contact,
+  .footer .social {
     min-width: 45%;
   }
 
@@ -486,7 +508,7 @@ nav {
     height: 60px;
     width: 100%;
   }
-  
+
   #links {
     display: none !important;
   }
@@ -494,56 +516,57 @@ nav {
   #hemberger {
     display: block !important;
   }
-  
+
   .content h1 {
     font-size: 2rem;
   }
-  
+
   .footer .container {
     flex-direction: column;
     text-align: center;
     align-items: center;
   }
-  
+
   .footer .contact,
   .footer .social,
   .footer .tagline {
     width: 100%;
     max-width: 500px;
   }
-  
+
   section {
     padding: 50px 15px;
     width: 100%;
   }
-  
+
   .location-wrap {
     flex-direction: column;
     width: 100%;
     padding: 0;
   }
 
-  .map-box, .feedback-box {
+  .map-box,
+  .feedback-box {
     max-width: 100%;
     min-height: 250px;
     width: 100%;
   }
-  
+
   #naveenLogo {
     width: 90px;
     height: 120px;
     margin-top: 10px;
   }
-  
+
   .submit-btn {
     padding: 10px 20px;
     margin-right: 0;
   }
 
-  .row > div {
+  .row>div {
     flex: 0 0 100%;
     margin: 15px 0;
-    
+
   }
 }
 
@@ -552,21 +575,21 @@ nav {
     padding: 0 15px;
     height: 8vh;
   }
-  
+
   .logo img {
     height: 30px;
   }
-  
+
   .content {
     padding-top: 12vh;
     padding-left: 10px;
-    
+
   }
-  
+
   .content h1 {
     font-size: 1.5rem;
   }
-  
+
   .feedback-box {
     padding: 15px;
   }
@@ -582,12 +605,12 @@ nav {
     right: 5%;
     top: 3%;
   }
-  
+
   .contactUs {
     padding: 15px;
     margin: 15px 0;
   }
-  
+
   .row {
     padding: 15px;
     margin-left: 5px;
@@ -604,12 +627,12 @@ nav {
   .submit-btn {
     width: 100%;
   }
-  
+
   section {
     padding-left: 30px;
     padding: 20px;
   }
-  
+
   .content {
     padding-left: 5px;
     padding-right: 5px;
@@ -618,6 +641,6 @@ nav {
 
 .logo img {
   height: 100px;
-   /* Adjust width as needed */
+  /* Adjust width as needed */
   object-fit: contain;
 }
