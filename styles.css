@@ -151,6 +151,11 @@ section p {
   margin-bottom: 15px;
 }
 
+.careerButton:hover {
+  background-color: rgb(231, 229, 229);
+  color: black;
+}
+
 /*content*/
 .card {
   background-color: white;
