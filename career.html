@@ -20,24 +20,24 @@
     <div id="navpage">
         <div id="close"><i class="ri-close-line"></i></div>
         <div id="mobilelinks">
-            <a class="link" href="index.html">Home</a>
-            <a class="link" href="career.html">Career</a>
-            <a class="link" href="product.html">Product</a>
-            <a class="link" href="contact.html">Contact Us</a>
+            <a class="link" href="/">Home</a>
+            <a class="link" href="/career.html">Career</a>
+            <a class="link" href="/product.html">Product</a>
+            <a class="link" href="/contact.html">Contact Us</a>
         </div>
     </div>
 
     <div id="overlay">
         <nav id="navbar">
             <div class="logo">
-                <a href="index.html"><img src="images/naveensLogo.png" alt="Naveen's Logo" id="naveenLogo"></a>
+              <a href="index.html"><img class="nlogo" src="/images/naveensLogo.png" alt="Naveen's Logo"></a>
             </div>
             <span id="hemberger"><i class="ri-menu-2-line"></i></span>
             <div id="links">
-                <a class="link" href="index.html">Home</a>
-                <a class="link" href="career.html">Career</a>
-                <a class="link" href="product.html">Product</a>
-                <a class="link" href="contact.html">Contact Us</a>
+                <a class="link" href="/">Home</a>
+                <a class="link" href="/career.html">Career</a>
+                <a class="link" href="/product.html">Product</a>
+                <a class="link" href="/contact.html">Contact Us</a>
             </div>
         </nav>
 
@@ -74,10 +74,10 @@
 
                 <div class="col-sm-3 social">
                     <h3>Pages</h3>
-                    <p><a class="link" href="index.html">Home</a></p>
-                    <p><a class="link" href="career.html">Career</a></p>
-                    <p><a class="link" href="product.html">Product</a></p>
-                    <p><a class="link" href="contact.html">Contact Us</a></p>
+                    <p><a class="link" href="/">Home</a></p>
+                    <p><a class="link" href="/career.html">Career</a></p>
+                    <p><a class="link" href="/product.html">Product</a></p>
+                    <p><a class="link" href="/contact.html">Contact Us</a></p>
                 </div>
 
                 <div class="col-sm-3 social">
@@ -94,7 +94,7 @@
             </div>
         </footer>
     </div>
-<script src="career.js"></script>
+
     <script>
        // Mobile navigation menu functionality
 const hamburger = document.getElementById('hemberger');
@@ -173,8 +173,8 @@ const handleScroll = debounce(() => {
 window.addEventListener("scroll", handleScroll);
 
 // Supabase initialization
-const SUPABASE_URL = "https://lmkwtyuzpgjxjrxsiimv.supabase.co"; 
-const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imxta3d0eXV6cGdqeGpyeHNpaW12Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDIzMTA0NDQsImV4cCI6MjA1Nzg4NjQ0NH0.1gCxhit9fe_KT134NOCA_f6Lzny1QOqd4RSDspVBVrU"; 
+const SUPABASE_URL = "https://bjvqrrtpesblwkoteosp.supabase.co"; 
+const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJqdnFycnRwZXNibHdrb3Rlb3NwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDI0MDEyNjEsImV4cCI6MjA1Nzk3NzI2MX0.wb_jBjBYmvNlxWcbW07MdIYxGlGlIBQX1XCOuKlsIEA"; 
 
 // Initialize Supabase client properly for CDN usage
 const supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
