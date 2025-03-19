@@ -37,7 +37,7 @@ header p {
 /* Container */
 .container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 ;
     padding: 2rem;
 }
 
@@ -279,7 +279,8 @@ a:hover{
   position: absolute;
   inset: 0;
   z-index: 2;
-  height: 55vh;
+  min-height: 30%;
+  max-height: 35%;
   width: 100%;
   /* margin-top: %; */
 
@@ -304,9 +305,22 @@ a:hover{
   margin-left: calc(-.5* var(--bs-gutter-x));
 }
 
+.productHeading{
+
+  margin:20px;
+  font-size: 2em;
+  color: #2b774f;
+
+}
+
 .text-center {
   text-align: center !important;
   z-index: 3;
+}
+
+div.container{
+  padding-top:5%;
+  margin-top: 3%;
 }
 
 h1{
