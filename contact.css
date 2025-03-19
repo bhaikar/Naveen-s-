@@ -27,7 +27,7 @@ body {
 }
 
 section {
-  padding: 40px 5%;
+  padding: 60px 5%;
   text-align: center;
   background-color: rgb(255, 255, 255);
   width: 100%;
@@ -223,6 +223,23 @@ nav {
 
 .scrolled #hemberger {
   color: white;
+}
+
+.stats{
+  padding: 120px 0;
+}
+
+.stats img{
+  content: "";
+  background: rgba(var(--color-background-rgb), 0.6);
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  min-height: 30%;
+  max-height: 35%;
+  width: 100%;
+  /* margin-top: %; */
+
 }
 
 /* Contact Page Styles */
